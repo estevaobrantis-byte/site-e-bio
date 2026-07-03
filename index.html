@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania Digital — Direitos e Segurança na Rede</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">🛡️ Cidadania<span>Digital</span></div>
+            <nav class="main-nav">
+                <a href="#golpes">Alertas de Golpes</a>
+                <a href="#leis">Legislação</a>
+                <a href="#simulador">Simulador</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero (Introdução) -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Quem protege você no ambiente digital?</h1>
+                <p>A internet pode ser um espaço confuso e manipulador. Conhecer as leis e os seus direitos fundamentais é o primeiro passo para navegar com total segurança e autonomia.</p>
+                <a href="#leis" class="btn-primary">Conhecer Meus Direitos</a>
+            </div>
+        </section>
+
+        <!-- Seção de Alertas de Golpes -->
+        <section id="golpes" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Engenharia Social: As Armadilhas Visuais</h2>
+                <p class="section-subtitle">Mensagens cotidianas são desenhadas para explorar a pressa, a curiosidade ou o medo. Você saberia identificar?</p>
+                
+                <div class="grid-cards">
+                    <div class="card warning-card">
+                        <div class="card-icon">🚨</div>
+                        <h3>O Falso Cancelamento</h3>
+                        <p class="card-text">"Sua compra de R$ 53.000 foi aprovada. Se você não reconhece, clique no link abaixo para cancelar."</p>
+                        <span class="badge">Perigo: Phishing</span>
+                    </div>
+
+                    <div class="card warning-card">
+                        <div class="card-icon">💰</div>
+                        <h3>A Falsa Premiação</h3>
+                        <p class="card-text">"Parabéns! Você ganhou R$ 2.000 no Pix da nossa instituição. Resgate clicando no link agora."</p>
+                        <span class="badge">Perigo: Roubo de Dados</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Legislação (O Escudo do Usuário) -->
+        <section id="leis" class="bg-light section-padding">
+            <div class="container">
+                <h2 class="section-title">O Escudo Legal do Cidadão Digital</h2>
+                <p class="section-subtitle">O Brasil possui legislações robustas criadas especificamente para resguardar a sua integridade e privacidade online.</p>
+
+                <div class="laws-timeline">
+                    <div class="law-item">
+                        <div class="law-number">01</div>
+                        <div class="law-details">
+                            <h3>LGPD (Lei Geral de Protection de Dados)</h3>
+                            <p>Regula estritamente o uso de dados pessoais por empresas físicas e digitais. Ela estabelece que você tem o controle total sobre quais informações fornece, como elas são tratadas e o direito de exigir a exclusão delas a qualquer momento.</p>
+                        </div>
+                    </div>
+
+                    <div class="law-item">
+                        <div class="law-number">02</div>
+                        <div class="law-details">
+                            <h3>Marco Civil da Internet</h3>
+                            <p>Considerada a "Constituição da Internet" no Brasil. Garante a proteção da sua privacidade, a inviolabilidade das suas mensagens privadas e a neutralidade da rede, impedindo que provedores discriminem o seu tráfego de dados.</p>
+                        </div>
+                    </div>
+
+                    <div class="law-item">
+                        <div class="law-number">03</div>
+                        <div class="law-details">
+                            <h3>Código de Defesa do Consumidor (CDC)</h3>
+                            <p>Totalmente aplicável ao comércio eletrônico. Garante o crucial <strong>Direito de Arrependimento</strong>: você tem até 7 dias corridos após o recebimento de qualquer produto comprado online para desistir da compra e receber o reembolso integral.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Interativa (Simulador) -->
+        <section id="simulador" class="section-padding">
+            <div class="container text-center">
+                <h2 class="section-title">Teste Seus Reflexos Digitais</h2>
+                <p class="section-subtitle">Imagine que você recebeu a mensagem abaixo no seu celular agora. O que você faria?</p>
+                
+                <div class="simulador-box">
+                    <div class="phone-screen">
+                        <div class="phone-header">💬 Mensagem SMS</div>
+                        <div class="phone-body">
+                            <p><strong>[BANCO INFO]:</strong> Notamos um acesso suspeito em sua conta corrente de um novo dispositivo. Evite o bloqueio imediato confirmando seus dados em: <span class="fake-link">bit.ly/seguranca-banco-atualizar</span></p>
+                        </div>
+                    </div>
+                    <div class="simulador-actions">
+                        <button class="btn btn-danger" onclick="responderSimulado('clicar')">Clicar no Link para Resolver</button>
+                        <button class="btn btn-success" onclick="responderSimulado('ignorar')">Ignorar e Verificar no App Oficial</button>
+                    </div>
+                    <div id="resultado-simulador" class="feedback-box hidden"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé Semântico (Correto, sem tradução para "rodapé") -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Cidadania Digital. Desenvolvido para fins educativos.</p>
+            <p>Navegue com consciência. Proteja seus dados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
